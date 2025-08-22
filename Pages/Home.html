@@ -8,6 +8,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="../Styles/GenPage.css">
         <link rel="stylesheet" href="../Styles/Home.css">
+        <!-- Nunito Google Fonts import -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <header class="site-header">
@@ -22,7 +24,7 @@
             </nav>
         </header>
         <main>
-            <div class="content-container">
+            <div class="content-container" id="CC">
                 <div class="row left-content">
                     <!-- Left Side: Events -->
                     <div class="col-md-6">
@@ -40,15 +42,19 @@
                     <div id="photoCarousel" class="carousel slide right-content" data-bs-ride="carousel">
                         <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="../Images/Summerfest2.JPG" class="d-block w-100" alt="...">
+                            <img src="../Images/Jack&Charlie.JPG" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="../Images/Chard1.JPG" class="d-block w-100" alt="...">
+                            <img src="../Images/MarcusChard.JPG" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
                             <img src="../Images/CharlieChard.JPG" class="d-block w-100" alt="...">
                         </div>
+                        <div class="carousel-item">
+                            <img src="../Images/LukeChard2.JPG" class="d-block w-100" alt="...">
                         </div>
+                
+                    </div>
                         <!-- Optional: navigation arrows -->
                         <button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -64,16 +70,17 @@
                 <div class="container my-5">
                     <div class="mb-5">
                       <video controls class="w-100 rounded shadow">
-                        <source src="videos/video1.mp4" type="video/mp4">
+                        <source src="../Images/video1.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                       </video>
+                      <p>Chard in the yard</p>
                     </div>
-                    
                     <div>
                       <video controls class="w-100 rounded shadow">
-                        <source src="videos/video2.mp4" type="video/mp4">
+                        <source src="../Images/video2.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                       </video>
+                      <p>Richfield Farmers Market</p>
                     </div>
                   </div>
             </div>

@@ -26,7 +26,7 @@
 body {
     background-color: var(--background-color);
     color: var(--text-color);
-    font-family: 'Arial', sans-serif;
+        font-family: 'Nunito', Arial, sans-serif;
     margin: 0;
     padding: 0;
     font-size: var(--font-md);
@@ -46,6 +46,7 @@ body {
 .site-header h1 {
     margin: 0;
     font-size: var(--font-lg);
+    color: var(--secondary-color);
 }
 
 /* Navigation */
@@ -60,12 +61,16 @@ body {
     color: var(--nav-text-color);
     font-weight: 500;
     font-size: var(--font-sm);
-    transition: color 0.3s ease;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 8px;
+    background: transparent;
+    transition: color 0.3s ease, background 0.3s ease;
 }
 
 .site-header nav a:hover {
     text-decoration: underline;
     color: var(--nav-hover-color);
+    background: var(--accent-color);
 }
 
 /* Main content layout */
@@ -77,6 +82,8 @@ body {
     flex-wrap: wrap;
     gap: var(--spacing-lg);
     justify-content: center;
+    background: var(--primary-color);
+    border-radius: 16px;
 }
 
 /* Responsive tweaks */
