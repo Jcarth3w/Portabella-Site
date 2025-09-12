@@ -1,0 +1,22 @@
+.member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 0.5rem;        /* reduce padding */
+    border: 1px solid #9b8d8d;
+    border-radius: 8px;
+    background: #393a3b;
+    width: fit-content;     /* shrink to content width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.member-card img {
+    width: 700px;      
+    height: 700px;
+    object-fit: cover; 
+    border-radius: 10px;
+    padding: 10px;
+}
