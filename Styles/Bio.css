@@ -1,3 +1,7 @@
+.content-container {
+    margin-bottom: 40px; 
+}
+
 .member-card {
     display: flex;
     flex-direction: column;
@@ -19,4 +23,8 @@
     object-fit: cover; 
     border-radius: 10px;
     padding: 10px;
+}
+
+.member-list {
+    padding: 1rem;
 }

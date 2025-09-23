@@ -44,28 +44,29 @@ h1, h2, h3, h4, h5, h6 {
 /* Header */
 .site-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* title left, nav right */
     align-items: center;
-    padding: var(--spacing-sm) var(--spacing-md);
+    padding: 1rem 2rem;
     color: var(--header-text-color);
-    flex-wrap: wrap;
 }
 
 .site-header h1 {
-    font-size: var(--font-lg);
+    font-size: 3rem; /* overrides clamp if you want fixed size */
     color: var(--secondary-color);
+    margin: 0 !important;
+    font-weight: 700;
 }
 
 /* Navigation */
 .site-header nav {
     display: flex;
-    flex-wrap: wrap;
     gap: var(--spacing-md);
+    flex-wrap: wrap; /* lets links drop if screen is tight */
+    justify-content: flex-end;
 }
 
 .site-header nav a {
     font-family: 'Nunito', sans-serif !important;
-    margin: 0 0.5rem;
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -76,6 +77,8 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: underline;
     color: var(--nav-hover-color);
     background: var(--accent-color);
+    border-radius: 5px;
+    padding: 2px 6px;
 }
 
 /* Main content layout */
@@ -102,12 +105,13 @@ footer {
 /* Responsive tweaks */
 @media (max-width: 768px) {
     .site-header {
-        flex-direction: column;
+        flex-direction: column; /* stack title + nav */
         text-align: center;
+        gap: var(--spacing-sm);
     }
 
     .site-header nav {
-        justify-content: center;
+        justify-content: center; /* center nav links under title */
     }
 
     .content-container {
